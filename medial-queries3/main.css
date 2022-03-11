@@ -1,3 +1,43 @@
 body {
   background: peachpuff;
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  border: 1px solid black;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+.a, .h {
+  width:100%;
+  margin: 1em;
+}
+
+.b, .c, .d, .e, .f, .g {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 25%;
+  margin: 1em;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  } 
+
+  header, .h {
+    width:100%;
+    margin: 1em;
+  }
 }
